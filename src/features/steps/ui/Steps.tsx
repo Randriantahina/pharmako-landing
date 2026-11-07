@@ -18,7 +18,17 @@ export function Steps() {
                 <span className="absolute -top-1 -right-1 grid size-6 place-items-center rounded-full bg-brand-mint text-xs text-brand-deep">{i + 1}</span>
               </span>
               <h3 className="text-xl text-brand-deep">{s.title}</h3>
-              <p className="max-w-xs text-sm text-muted-foreground">{s.text}</p>
+              {s.text && <p className="max-w-xs text-sm text-muted-foreground">{s.text}</p>}
+              {s.options && (
+                <ul className="flex flex-col gap-1.5 text-sm text-brand-deep">
+                  {s.options.map((o) => (
+                    <li key={o} className="flex items-center justify-center gap-2">
+                      <span aria-hidden className="h-px w-4 bg-primary" />
+                      {o}
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           </Reveal>
         ))}
