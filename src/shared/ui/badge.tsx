@@ -1,0 +1,24 @@
+import * as React from 'react'
+import { cva, type VariantProps } from 'class-variance-authority'
+import { cn } from '@/shared/lib/utils'
+
+const badgeVariants = cva(
+  'inline-flex w-fit items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary text-primary-foreground',
+        secondary: 'bg-secondary text-secondary-foreground',
+        outline: 'border border-primary/30 bg-white/70 text-brand-dark',
+        soon: 'bg-brand-mint text-brand-deep',
+      },
+    },
+    defaultVariants: { variant: 'secondary' },
+  },
+)
+
+function Badge({ className, variant, ...props }: React.ComponentProps<'span'> & VariantProps<typeof badgeVariants>) {
+  return <span data-slot="badge" className={cn(badgeVariants({ variant }), className)} {...props} />
+}
+
+export { Badge }
