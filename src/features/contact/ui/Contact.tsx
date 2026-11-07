@@ -15,10 +15,10 @@ export function Contact() {
       <SectionHeading tag="Contact" title="Une question ? Parlons-en.">
         L’équipe Pharmako vous répond avec plaisir.
       </SectionHeading>
-      <ul className="mb-12 grid grid-cols-2 gap-6 sm:grid-cols-4">
+      <ul className="mb-12 flex flex-wrap justify-center gap-x-6 gap-y-8">
         {TEAM.map((m, i) => (
           <Reveal key={i} delay={i * 0.08}>
-            <li className="flex flex-col items-center gap-3 text-center">
+            <li className="flex w-36 flex-col items-center gap-3 text-center sm:w-40">
               {m.photo ? (
                 <img src={`${import.meta.env.BASE_URL}team/${m.photo}`} alt={m.name} loading="lazy" className="size-24 rounded-full border-4 border-white object-cover shadow-md sm:size-28" />
               ) : (

@@ -6,4 +6,5 @@ export const TEAM: readonly TeamMember[] = [
   { name: 'Prénom Nom', role: 'Rôle' },
   { name: 'Prénom Nom', role: 'Rôle' },
   { name: 'Prénom Nom', role: 'Rôle' },
+  { name: 'Prénom Nom', role: 'Rôle' },
 ]
