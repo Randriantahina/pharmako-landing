@@ -1,4 +1,4 @@
-import { Smartphone, Apple } from 'lucide-react'
+import { Smartphone } from 'lucide-react'
 import { Button } from '@/shared/ui/button'
 import { Reveal } from '@/shared/components/Reveal'
 import { LINKS } from '@/shared/config/links'
@@ -13,7 +13,6 @@ export function CallToAction() {
           <p className="relative mx-auto mt-4 max-w-xl text-white/80">Téléchargez Pharmako et trouvez vos médicaments avant de vous déplacer.</p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
             <Button asChild variant="light" size="lg"><a href={LINKS.playStore}><Smartphone /> Google Play</a></Button>
-            <Button asChild variant="light" size="lg"><a href={LINKS.appStore}><Apple /> App Store</a></Button>
           </div>
         </div>
       </Reveal>
