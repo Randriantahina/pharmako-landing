@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react'
 import { Reveal } from '@/shared/components/Reveal'
 import { SectionHeading } from '@/shared/components/SectionHeading'
 import { STEPS } from '../data'
@@ -20,11 +21,12 @@ export function Steps() {
               <h3 className="text-xl text-brand-deep">{s.title}</h3>
               {s.text && <p className="max-w-xs text-sm text-muted-foreground">{s.text}</p>}
               {s.options && (
-                <ul className="flex flex-col gap-1.5 text-sm text-brand-deep">
+                <ul className="flex w-full max-w-xs flex-col gap-2">
                   {s.options.map((o) => (
-                    <li key={o} className="flex items-center justify-center gap-2">
-                      <span aria-hidden className="h-px w-4 bg-primary" />
-                      {o}
+                    <li key={o.label} className="flex items-center gap-3 rounded-full border border-primary/25 bg-white px-4 py-2.5 text-left text-sm text-brand-deep shadow-sm">
+                      <ArrowRight aria-hidden className="size-4 shrink-0 text-primary" />
+                      <span className="flex-1">{o.label}</span>
+                      <o.icon aria-hidden className="size-4 shrink-0 text-primary" />
                     </li>
                   ))}
                 </ul>
