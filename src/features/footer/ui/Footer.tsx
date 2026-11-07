@@ -14,7 +14,7 @@ export function Footer() {
           <a href="#faq" className="hover:text-primary">FAQ</a>
           <a href={LINKS.contact} className="hover:text-primary">Contact</a>
         </nav>
-        <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Pharmako. Tous droits réservés.</p>
+        <p className="text-xs text-muted-foreground">© 2026 Pharmako. Tous droits réservés.</p>
       </div>
     </footer>
   )
