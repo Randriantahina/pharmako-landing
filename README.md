@@ -1,32 +1,36 @@
-# React + TypeScript + Vite
+# Pharmako — Landing page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page de l'application mobile **Pharmako** (pharmacies de garde, chat/appel avec le pharmacien, devis, paiement Mobile Money, QR code de retrait, livraison). Construite selon le framework **StoryBrand**.
 
-Currently, two official plugins are available:
+## Stack
+React 19 · TypeScript · Vite · Tailwind CSS v4 · shadcn/ui (Radix) · Framer Motion · police Mabry Pro · **pnpm**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Démarrer
+```bash
+pnpm install
+pnpm dev      # http://localhost:5173
+pnpm build    # type-check + build de production
+pnpm lint
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Architecture (feature-sliced léger)
+```
+src/
+├─ app/                  # composition de la page (App.tsx)
+├─ features/             # une tranche par section de la landing
+│  └─ <feature>/
+│     ├─ ui/             # composants React
+│     ├─ data.ts         # contenu (textes, listes)
+│     ├─ types.ts        # types du contenu
+│     └─ index.ts        # API publique de la feature
+└─ shared/
+   ├─ ui/                # composants shadcn (Button, Card, Accordion…)
+   ├─ components/        # Logo, Reveal, SectionHeading
+   ├─ config/            # liens (stores, contact)
+   ├─ lib/               # utilitaires (cn)
+   └─ assets/            # police, logo
+```
+Règles : `app` → `features` → `shared` ; une feature n'importe jamais une autre feature (seulement `shared`) et s'importe via son `index.ts`.
+
+## Contenu à compléter
+- Liens Play Store / App Store et e-mail de contact : `src/shared/config/links.ts`.
