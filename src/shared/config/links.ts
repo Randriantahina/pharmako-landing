@@ -1,5 +1,5 @@
-// Remplacez ces liens quand l'app sera publiée.
+// Remplacez ces liens quand l’app sera publiée.
 export const LINKS = {
-  playStore: '#telecharger',
+  download: '#telecharger',
   contact: 'mailto:contact@pharmako.mg',
 }

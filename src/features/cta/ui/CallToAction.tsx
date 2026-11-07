@@ -12,7 +12,7 @@ export function CallToAction() {
           <h2 className="relative mx-auto max-w-2xl text-3xl leading-tight sm:text-5xl">Prêt à ne plus jamais chercher une pharmacie à l’aveugle ?</h2>
           <p className="relative mx-auto mt-4 max-w-xl text-white/80">Téléchargez Pharmako et trouvez vos médicaments avant de vous déplacer.</p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
-            <Button asChild variant="light" size="lg"><a href={LINKS.playStore}><Smartphone /> Google Play</a></Button>
+            <Button asChild variant="light" size="lg"><a href={LINKS.download}><Smartphone /> Télécharger l’app</a></Button>
           </div>
         </div>
       </Reveal>
