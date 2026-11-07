@@ -3,6 +3,7 @@ import { Menu } from 'lucide-react'
 import { Logo } from '@/shared/components/Logo'
 import { Button } from '@/shared/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from '@/shared/ui/sheet'
+import { LINKS } from '@/shared/config/links'
 import { cn } from '@/shared/lib/utils'
 import { NAV_ITEMS } from '../data'
 
@@ -25,7 +26,7 @@ export function Navbar() {
           ))}
         </nav>
         <div className="flex items-center gap-2">
-          <Button asChild className="hidden sm:inline-flex"><a href="#telecharger">Télécharger</a></Button>
+          <Button asChild className="hidden sm:inline-flex"><a href={LINKS.download} target="_blank" rel="noopener noreferrer">Télécharger</a></Button>
           <Sheet>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="lg:hidden" aria-label="Ouvrir le menu"><Menu className="size-6" /></Button>
@@ -40,7 +41,7 @@ export function Navbar() {
                   </SheetClose>
                 ))}
               </nav>
-              <SheetClose asChild><Button asChild size="lg" className="mt-auto"><a href="#telecharger">Télécharger</a></Button></SheetClose>
+              <SheetClose asChild><Button asChild size="lg" className="mt-auto"><a href={LINKS.download} target="_blank" rel="noopener noreferrer">Télécharger</a></Button></SheetClose>
             </SheetContent>
           </Sheet>
         </div>

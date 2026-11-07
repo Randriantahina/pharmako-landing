@@ -4,7 +4,7 @@ export function PhoneMockup() {
   return (
     <div className="relative mx-auto w-[260px] sm:w-[290px]">
       <div className="rounded-[2.6rem] border-[7px] border-brand-dark bg-brand-deep p-1 shadow-2xl shadow-brand-dark/30">
-        <div className="relative h-[500px] overflow-hidden rounded-[2.1rem] bg-gradient-to-b from-secondary to-white p-4 sm:h-[560px]">
+        <div className="relative overflow-hidden rounded-[2.1rem] bg-gradient-to-b from-secondary to-white p-4 pb-6">
           <div className="mx-auto mb-4 h-5 w-24 rounded-full bg-brand-deep" />
           <p className="text-xs text-muted-foreground">Bonjour 👋</p>
           <p className="mb-3 text-lg text-brand-deep">Quelle pharmacie est la plus proche ?</p>

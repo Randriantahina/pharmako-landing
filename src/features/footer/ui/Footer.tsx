@@ -1,5 +1,4 @@
 import { Logo } from '@/shared/components/Logo'
-import { LINKS } from '@/shared/config/links'
 
 export function Footer() {
   return (
@@ -12,7 +11,7 @@ export function Footer() {
         <nav className="flex gap-6 text-sm text-brand-deep" aria-label="Pied de page">
           <a href="#etapes" className="hover:text-primary">Comment ça marche</a>
           <a href="#faq" className="hover:text-primary">FAQ</a>
-          <a href={LINKS.contact} className="hover:text-primary">Contact</a>
+          <a href="#contact" className="hover:text-primary">Contact</a>
         </nav>
         <p className="text-xs text-muted-foreground">© 2026 Pharmako. Tous droits réservés.</p>
       </div>

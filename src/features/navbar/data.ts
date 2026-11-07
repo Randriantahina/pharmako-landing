@@ -6,4 +6,5 @@ export const NAV_ITEMS: readonly NavItem[] = [
   { href: '#fonctionnalites', label: 'Fonctionnalités' },
   { href: '#video', label: 'Démo' },
   { href: '#faq', label: 'FAQ' },
+  { href: '#contact', label: 'Contact' },
 ]

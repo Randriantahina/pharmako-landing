@@ -7,5 +7,5 @@ export const FEATURES: readonly Feature[] = [
   { icon: MessageCircle, title: 'Chat avec le pharmacien', text: 'Envoyez votre ordonnance en photo et obtenez la disponibilité et le devis.' },
   { icon: Wallet, title: 'Paiement Mobile Money', text: 'MVola, Orange Money, Airtel Money : payez le devis en toute simplicité.' },
   { icon: QrCode, title: 'QR code de retrait', text: 'Après paiement, un QR code prouve votre achat. Montrez-le, repartez avec vos médicaments.' },
-  { icon: Bike, title: 'Livraison', text: 'Recevez vos médicaments chez vous, sans bouger.', soon: true },
+  { icon: Bike, title: 'Livraison', text: 'Recevez vos médicaments chez vous, sans bouger.' },
 ]
