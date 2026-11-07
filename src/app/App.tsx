@@ -1,4 +1,5 @@
 import { CallToAction } from '@/features/cta'
+import { Contact } from '@/features/contact'
 import { Empathy } from '@/features/empathy'
 import { Faq } from '@/features/faq'
 import { Footer } from '@/features/footer'
@@ -24,6 +25,7 @@ export default function App() {
         <Outcome />
         <Faq />
         <CallToAction />
+        <Contact />
       </main>
       <Footer />
     </>
