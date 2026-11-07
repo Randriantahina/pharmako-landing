@@ -40,4 +40,4 @@ Chaque push sur `main` déclenche `.github/workflows/deploy.yml`, qui build et p
 **https://randriantahina.github.io/pharmako-landing/**
 
 Prérequis (une seule fois) : dépôt → Settings → Pages → Source = **GitHub Actions**.
-Le chemin de base est défini dans `vite.config.ts` (`base: '/pharmako-landing/'`) ; le passer à `'/'` avec un domaine personnalisé.
+Le chemin de base vient de la variable `VITE_BASE` (définie dans le workflow : `/pharmako-landing/`). Par défaut c'est `/`, ce qui convient à Vercel ou à un domaine personnalisé (aucune config requise, répertoire racine `./`, build `pnpm build`, sortie `dist`).
