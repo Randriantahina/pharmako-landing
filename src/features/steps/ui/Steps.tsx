@@ -1,12 +1,6 @@
-import { Search, MessagesSquare, QrCode } from 'lucide-react'
 import { Reveal } from '@/shared/components/Reveal'
 import { SectionHeading } from '@/shared/components/SectionHeading'
-
-const STEPS = [
-  { icon: Search, title: 'Trouvez', text: 'Ouvrez la carte : voyez les pharmacies de garde et la plus proche de vous.' },
-  { icon: MessagesSquare, title: 'Discutez et recevez le devis', text: 'Écrivez ou appelez le pharmacien, envoyez votre ordonnance, recevez le prix exact.' },
-  { icon: QrCode, title: 'Payez et retirez', text: 'Payez en Mobile Money, puis montrez votre QR code au comptoir. Ou faites-vous livrer.' },
-]
+import { STEPS } from '../data'
 
 export function Steps() {
   return (

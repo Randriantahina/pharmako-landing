@@ -1,9 +1,8 @@
 import { X, Check } from 'lucide-react'
 import { Reveal } from '@/shared/components/Reveal'
 import { SectionHeading } from '@/shared/components/SectionHeading'
+import { AFTER, BEFORE } from '../data'
 
-const BEFORE = ['Tourner d’une pharmacie à l’autre', 'Découvrir la rupture sur place', 'Payer un prix inconnu', 'Perdre du temps dans la queue']
-const AFTER = ['Pharmacie de garde trouvée sur la carte', 'Disponibilité confirmée par chat ou appel', 'Devis clair avant de payer', 'Retrait rapide avec QR code']
 
 export function Outcome() {
   return (

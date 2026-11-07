@@ -1,12 +1,6 @@
-import { BadgeCheck, Smartphone, QrCode } from 'lucide-react'
 import { Reveal } from '@/shared/components/Reveal'
 import { SectionHeading } from '@/shared/components/SectionHeading'
-
-const PROOFS = [
-  { icon: BadgeCheck, title: 'Pharmacies validées', text: 'Chaque pharmacie est vérifiée et validée par notre équipe avant d’apparaître dans l’app.' },
-  { icon: Smartphone, title: 'Paiement local', text: 'Vous payez avec MVola, Orange Money ou Airtel Money, sans carte bancaire.' },
-  { icon: QrCode, title: 'Retrait sécurisé', text: 'Un code unique, vérifié au comptoir : la pharmacie sait que vous avez bien payé.' },
-]
+import { PROOFS } from '../data'
 
 export function Empathy() {
   return (

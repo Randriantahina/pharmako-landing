@@ -4,14 +4,7 @@ import { Logo } from '@/shared/components/Logo'
 import { Button } from '@/shared/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from '@/shared/ui/sheet'
 import { cn } from '@/shared/lib/utils'
-
-const NAV = [
-  { href: '#probleme', label: 'Le problème' },
-  { href: '#etapes', label: 'Comment ça marche' },
-  { href: '#fonctionnalites', label: 'Fonctionnalités' },
-  { href: '#video', label: 'Démo' },
-  { href: '#faq', label: 'FAQ' },
-]
+import { NAV_ITEMS } from '../data'
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -27,7 +20,7 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-6">
         <Logo />
         <nav className="hidden items-center gap-8 text-sm text-brand-deep lg:flex" aria-label="Navigation principale">
-          {NAV.map((n) => (
+          {NAV_ITEMS.map((n) => (
             <a key={n.href} href={n.href} className="transition-colors hover:text-primary">{n.label}</a>
           ))}
         </nav>
@@ -41,7 +34,7 @@ export function Navbar() {
               <SheetTitle className="sr-only">Menu</SheetTitle>
               <Logo />
               <nav className="mt-4 flex flex-col gap-1 text-lg" aria-label="Menu mobile">
-                {NAV.map((n) => (
+                {NAV_ITEMS.map((n) => (
                   <SheetClose asChild key={n.href}>
                     <a href={n.href} className="rounded-xl px-3 py-3 text-brand-deep hover:bg-secondary">{n.label}</a>
                   </SheetClose>
