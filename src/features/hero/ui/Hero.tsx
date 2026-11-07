@@ -13,7 +13,7 @@ export function Hero() {
         <Reveal className="flex flex-col items-start gap-6">
           <Badge variant="outline"><MapPin className="size-3.5" /> Pharmacies d’Antananarivo, dans une seule app</Badge>
           <h1 className="text-5xl leading-[1.02] text-brand-deep sm:text-6xl lg:text-7xl">
-            Vous cherchez <span className="text-primary">un médicament ?</span>
+            Vous cherchez <span className="text-primary">une pharmacie ?</span>
           </h1>
           <p className="max-w-xl text-xl text-brand-deep sm:text-2xl">
             Pharmako vous met en relation avec les pharmacies près de chez vous. Vérifiez le stock, obtenez le prix, payez, puis récupérez ou faites-vous livrer.
