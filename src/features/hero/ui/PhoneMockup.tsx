@@ -7,13 +7,13 @@ export function PhoneMockup() {
         <div className="relative h-[500px] overflow-hidden rounded-[2.1rem] bg-gradient-to-b from-secondary to-white p-4 sm:h-[560px]">
           <div className="mx-auto mb-4 h-5 w-24 rounded-full bg-brand-deep" />
           <p className="text-xs text-muted-foreground">Bonjour 👋</p>
-          <p className="mb-3 text-lg text-brand-deep">Où est la pharmacie de garde ?</p>
+          <p className="mb-3 text-lg text-brand-deep">Quelle pharmacie est la plus proche ?</p>
           <div className="relative mb-3 h-36 overflow-hidden rounded-2xl bg-brand-mint/50">
             <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(#1f857e33_1px,transparent_1px),linear-gradient(90deg,#1f857e33_1px,transparent_1px)] [background-size:24px_24px]" />
             <MapPin className="absolute top-8 left-10 size-7 fill-primary text-white" />
             <MapPin className="absolute top-14 right-12 size-9 fill-brand-dark text-white animate-bounce" />
             <Navigation className="absolute bottom-6 left-1/2 size-5 fill-brand-deep text-brand-deep" />
-            <span className="absolute right-2 bottom-2 rounded-full bg-white px-2 py-0.5 text-[10px] text-brand-dark">De garde · 350 m</span>
+            <span className="absolute right-2 bottom-2 rounded-full bg-white px-2 py-0.5 text-[10px] text-brand-dark">Ouverte · 350 m</span>
           </div>
           <div className="mb-2 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-sm">
             <span className="grid size-9 place-items-center rounded-full bg-secondary text-primary"><MessageCircle className="size-4" /></span>

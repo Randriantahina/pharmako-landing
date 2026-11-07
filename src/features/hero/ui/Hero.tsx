@@ -10,13 +10,13 @@ export function Hero() {
       <div aria-hidden className="pointer-events-none absolute -top-24 -right-24 size-[28rem] rounded-full bg-brand-mint/40 blur-3xl" />
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="flex flex-col items-start gap-6">
-          <Badge variant="outline"><MapPin className="size-3.5" /> Antananarivo · pharmacies de garde</Badge>
+          <Badge variant="outline"><MapPin className="size-3.5" /> Disponible à Antananarivo</Badge>
           <h1 className="text-5xl leading-[1.02] text-brand-deep sm:text-6xl lg:text-7xl">
             La pharmacie <span className="text-primary">dans votre poche.</span>
           </h1>
-          <p className="text-xl text-brand-deep sm:text-2xl">Pharmacie de garde, stock et prix : sachez tout avant de bouger.</p>
+          <p className="text-xl text-brand-deep sm:text-2xl">Disponibilité, prix et paiement : tout est réglé avant même d’entrer en pharmacie.</p>
           <p className="max-w-xl text-lg text-muted-foreground">
-            Repérez la pharmacie de garde la plus proche, discutez avec le pharmacien, recevez votre devis, payez en Mobile Money et retirez avec un QR code. Sans queue, sans déplacement pour rien.
+            Trouvez la pharmacie la plus proche, vérifiez que vos médicaments sont en stock et recevez votre devis par chat. Payez en Mobile Money, retirez avec un QR code : zéro queue, zéro déplacement pour rien.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg"><a href="#telecharger">Télécharger Pharmako <ArrowRight /></a></Button>
