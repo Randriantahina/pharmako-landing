@@ -1,10 +1,11 @@
 import type { TeamMember } from './types'
 
-// À remplacer par les vrais membres. Déposer les photos dans public/team/ puis renseigner `photo`.
+// Photos : déposer le fichier dans public/team/ puis renseigner `photo` (ex. photo: 'dario.jpg').
+// Les deux dernières entrées sont des emplacements à remplir.
 export const TEAM: readonly TeamMember[] = [
-  { name: 'Prénom Nom', role: 'Rôle' },
-  { name: 'Prénom Nom', role: 'Rôle' },
-  { name: 'Prénom Nom', role: 'Rôle' },
+  { name: 'Dario', role: 'CEO' },
+  { name: 'Shanjeev', role: 'Développeur' },
+  { name: 'Stanislas', role: 'Directeur Commercial' },
   { name: 'Prénom Nom', role: 'Rôle' },
   { name: 'Prénom Nom', role: 'Rôle' },
 ]
