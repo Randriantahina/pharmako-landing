@@ -9,8 +9,8 @@ export function VideoDemo() {
       </SectionHeading>
       <Reveal>
         <div className="overflow-hidden rounded-3xl border-4 border-white bg-brand-deep shadow-2xl shadow-brand-dark/20">
-          <video className="aspect-video w-full" controls preload="metadata" poster="/poster.jpg" playsInline>
-            <source src="/video.mp4" type="video/mp4" />
+          <video className="aspect-video w-full" controls preload="metadata" poster={`${import.meta.env.BASE_URL}poster.jpg`} playsInline>
+            <source src={`${import.meta.env.BASE_URL}video.mp4`} type="video/mp4" />
             Votre navigateur ne lit pas cette vidéo.
           </video>
         </div>
