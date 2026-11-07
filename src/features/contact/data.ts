@@ -5,7 +5,7 @@ import type { TeamMember } from './types'
 export const TEAM: readonly TeamMember[] = [
   { name: 'Dario', role: 'CEO', photo: 'dario.jpg' },
   { name: 'Shanjeev', role: 'Développeur', photo: 'shanjeev.jpg' },
-  { name: 'Stanislas', role: 'Directeur Commercial' },
+  { name: 'Stanislas', role: 'Directeur Commercial', photo: 'stanislas.jpg' },
   { name: 'Mihanta', role: 'Rôle', photo: 'mihanta.jpg' },
   { name: 'Prénom Nom', role: 'Rôle' },
 ]
