@@ -34,3 +34,10 @@ Règles : `app` → `features` → `shared` ; une feature n'importe jamais une a
 
 ## Contenu à compléter
 - Liens Play Store / App Store et e-mail de contact : `src/shared/config/links.ts`.
+
+## Déploiement (GitHub Pages)
+Chaque push sur `main` déclenche `.github/workflows/deploy.yml`, qui build et publie sur :
+**https://randriantahina.github.io/pharmako-landing/**
+
+Prérequis (une seule fois) : dépôt → Settings → Pages → Source = **GitHub Actions**.
+Le chemin de base est défini dans `vite.config.ts` (`base: '/pharmako-landing/'`) ; le passer à `'/'` avec un domaine personnalisé.
