@@ -11,11 +11,12 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="flex flex-col items-start gap-6">
           <Badge variant="outline"><MapPin className="size-3.5" /> Antananarivo · pharmacies de garde</Badge>
-          <h1 className="text-4xl leading-[1.05] text-brand-deep sm:text-5xl lg:text-6xl">
-            Trouvez votre pharmacie, vos médicaments et <span className="text-primary">votre prix</span> avant de vous déplacer.
+          <h1 className="text-5xl leading-[1.02] text-brand-deep sm:text-6xl lg:text-7xl">
+            La pharmacie <span className="text-primary">dans votre poche.</span>
           </h1>
+          <p className="text-xl text-brand-deep sm:text-2xl">Pharmacie de garde, stock et prix : sachez tout avant de bouger.</p>
           <p className="max-w-xl text-lg text-muted-foreground">
-            Pharmako vous montre la pharmacie de garde la plus proche, vous laisse discuter avec le pharmacien pour savoir si vos médicaments sont disponibles, puis vous envoie un devis. Vous payez en Mobile Money et vous retirez avec un QR code.
+            Repérez la pharmacie de garde la plus proche, discutez avec le pharmacien, recevez votre devis, payez en Mobile Money et retirez avec un QR code. Sans queue, sans déplacement pour rien.
           </p>
           <div className="flex flex-wrap gap-3">
             <Button asChild size="lg"><a href="#telecharger">Télécharger Pharmako <ArrowRight /></a></Button>
