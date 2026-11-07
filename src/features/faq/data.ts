@@ -5,6 +5,6 @@ export const FAQ: readonly FaqItem[] = [
   { q: 'Comment payer ?', a: 'Dans l’application, avec MVola, Orange Money ou Airtel Money.' },
   { q: 'Comment récupérer mes médicaments ?', a: 'Faites-vous livrer. Ou passez au comptoir avec votre QR code.' },
   { q: 'Puis-je envoyer mon ordonnance ?', a: 'Oui, prenez-la en photo et envoyez-la au pharmacien dans la discussion.' },
-  { q: 'Et la livraison ?', a: 'La livraison arrive bientôt, avec nos partenaires de livraison. En attendant, le retrait en pharmacie sans queue est disponible.' },
+  { q: 'Et la livraison ?', a: 'Oui. Après le paiement, vous choisissez de vous faire livrer chez vous ou de passer au comptoir avec votre QR code.' },
   { q: 'Comment trouver une pharmacie de garde ?', a: 'La carte affiche les pharmacies de garde, votre position et la pharmacie la plus proche de vous.' },
 ]
